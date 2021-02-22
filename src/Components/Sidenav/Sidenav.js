@@ -3,10 +3,15 @@ import '../../styles/Components/Sidenav.css';
 import Logo from '../common/Logo';
 import SidenavList from './SidenavList';
 import { sidenavData, sidenavSettings } from './SidenavData';
-
 import { NavLink } from 'react-router-dom';
+
 function Sidenav() {
-  const [selectedMenuItem, setSelectedMenuItem] = React.useState(null);
+  const [selectedMenuItem, setSelectedMenuItem] = React.useState('Cadastros');
+
+  // React.useEffect(() => {
+  //   setSelectedMenuItem('Cadastros');
+  //   console.log('React effect trigger', selectedMenuItem);
+  // }, []);
 
   const toggleActive = (item) => {
     setSelectedMenuItem(item.title);

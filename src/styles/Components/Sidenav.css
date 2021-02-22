@@ -3,8 +3,9 @@
   display: block;
   background-color: var(--pallette-malachite);
   height: 100%;
-  min-width: 255px;
+  max-width: 255px;
   color: white;
+  width: 100%;
 }
 
 .sidenav .sidenav__item {
@@ -16,11 +17,13 @@
   font-weight: 400;
 }
 
-.active button {
+.active button,
+.active a {
   font-weight: 600;
 }
 
-.sidenav__item button {
+.sidenav__item button,
+.sidenav__item a {
   cursor: pointer;
   outline: none;
   display: flex;
@@ -47,7 +50,7 @@
 
 .sidenav__sub.open {
   opacity: 1;
-  max-height: 1000px;
+  max-height: 600px;
 }
 
 .sidenav__sub a {
@@ -63,4 +66,25 @@
 .sidenav__sub a:hover {
   font-weight: 600;
   margin-left: 1.75rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .sidenav {
+    width: 175px;
+  }
+
+  .sidenav__item button,
+  .sidenav__item a {
+    font-size: 0.8em;
+    width: initial;
+  }
+
+  .sidenav__sub a {
+    font-size: 0.8rem;
+  }
+
+  .sidenav__sub.open {
+    overflow-y: scroll;
+    max-height: 175px;
+  }
 }

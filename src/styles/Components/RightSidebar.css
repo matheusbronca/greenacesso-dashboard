@@ -1,0 +1,44 @@
+.profileCard {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.profileCard__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.profileCard__container span {
+  display: block;
+  flex: 1;
+}
+
+.profileCard .profileCard__avatar {
+  width: 70px;
+  border-radius: 15px;
+  margin-right: 1.5rem;
+}
+
+.cardTitle {
+  display: block;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+@media screen and (max-width: 1420px) {
+  .cardTitle {
+    font-size: 0.5rem;
+  }
+
+  .card span {
+    font-size: 0.8rem;
+  }
+
+  .profileCard .profileCard__avatar {
+    width: 35px;
+  }
+}

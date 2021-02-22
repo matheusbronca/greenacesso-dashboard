@@ -1,0 +1,25 @@
+.textInput {
+  display: block;
+  padding: 0rem 1rem;
+  height: 50px;
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  margin-right: 0.5rem;
+}
+
+.searchButton {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #83dfbd;
+  padding: 0 1rem;
+  border: #61d4ab 1px solid;
+  border-radius: 15px;
+  transition: 0.15s filter;
+}
+
+.searchButton:hover {
+  filter: brightness(1.05);
+}

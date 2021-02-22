@@ -1,5 +1,12 @@
 import React from 'react';
-import { FiHelpCircle, FiLogOut, FiMessageSquare, FiSettings, FiTrendingUp, FiUser } from 'react-icons/fi';
+import {
+  FiHelpCircle,
+  FiLogOut,
+  FiMessageSquare,
+  FiSettings,
+  FiTrendingUp,
+  FiUser,
+} from 'react-icons/fi';
 
 export const sidenavData = [
   {
@@ -27,7 +34,7 @@ export const sidenavData = [
         href: '/cadastros/unidades',
       },
       {
-        title: 'Livros de Lotes',
+        title: 'Livro de Lotes',
         href: '/cadastros/livro-de-lotes',
       },
       {
@@ -58,17 +65,20 @@ export const sidenavData = [
 export const sidenavSettings = [
   {
     title: 'Configurações',
+    href: '/configuracoes',
     icon: <FiSettings />,
     subNav: [],
   },
   {
     title: 'Ajuda',
+    href: '/ajuda',
     icon: <FiHelpCircle />,
     subNav: [],
   },
   {
     title: 'Sair',
-    icon: <FiLogOut/>,
+    href: '/sair',
+    icon: <FiLogOut />,
     subNav: [],
   },
 ];

@@ -1,0 +1,50 @@
+.ActionBar {
+  display: flex;
+  background-color: white;
+  flex-direction: row;
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 25px;
+}
+
+.actionItem {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: var(--pallette-sanjuan);
+  display: flex;
+  flex-direction: column;
+  min-width: 100px;
+  padding: 0.875rem 2rem;
+  align-items: center;
+  border-right: 1px solid #ebebebfe;
+  transition: 0.15s color;
+}
+
+.actionItem:hover {
+  color: orange;
+}
+
+.actionItem__label {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .ActionBar {
+    border-radius: 15px;
+  }
+
+  .actionItem {
+    padding: 0.5rem 1.25rem;
+  }
+
+  .actionItem svg {
+    width: 1.5rem;
+  }
+
+  .actionItem__label {
+    margin-top: 0.1rem;
+    font-size: 0.75rem;
+  }
+}
